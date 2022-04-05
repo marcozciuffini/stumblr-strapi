@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "towns",
+  "info": {
+    "singularName": "town",
+    "pluralName": "towns",
+    "displayName": "Town",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "pubs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pub.pub"
+    }
+  }
+}
