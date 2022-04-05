@@ -1,0 +1,108 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pubs",
+  "info": {
+    "singularName": "pub",
+    "pluralName": "pubs",
+    "displayName": "pub",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "website": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "openingTimes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "times.opening-times"
+    },
+    "wifi": {
+      "type": "boolean"
+    },
+    "card": {
+      "type": "boolean"
+    },
+    "price": {
+      "type": "integer",
+      "max": 3,
+      "min": 1,
+      "default": 1
+    },
+    "freeHouse": {
+      "type": "boolean"
+    },
+    "chain": {
+      "type": "enumeration",
+      "enum": [
+        "no",
+        "small",
+        "large"
+      ]
+    },
+    "ales": {
+      "type": "boolean"
+    },
+    "beerGarden": {
+      "type": "boolean"
+    },
+    "dogFriendly": {
+      "type": "boolean"
+    },
+    "food": {
+      "type": "boolean"
+    },
+    "sundayRoasts": {
+      "type": "boolean"
+    },
+    "vegan": {
+      "type": "boolean"
+    },
+    "foodOpeningTimes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "times.opening-times"
+    },
+    "btSport": {
+      "type": "boolean"
+    },
+    "sky": {
+      "type": "boolean"
+    },
+    "liveMusic": {
+      "type": "boolean"
+    },
+    "musicTimes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "times.opening-times"
+    },
+    "poolTable": {
+      "type": "boolean"
+    },
+    "nightclub": {
+      "type": "boolean"
+    },
+    "socialClub": {
+      "type": "boolean"
+    }
+  }
+}

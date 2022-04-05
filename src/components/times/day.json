@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_times_days",
+  "info": {
+    "displayName": "day",
+    "icon": "calendar-day",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "open": {
+      "type": "time"
+    },
+    "close": {
+      "type": "time"
+    }
+  }
+}
